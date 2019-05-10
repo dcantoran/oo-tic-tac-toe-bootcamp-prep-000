@@ -30,7 +30,11 @@ class TicTacToe
   end
   
   def position_taken?(idx)
-    
+    if @board[idx] == " "
+      false 
+    else 
+      true 
+    end
   end 
   
 end 
