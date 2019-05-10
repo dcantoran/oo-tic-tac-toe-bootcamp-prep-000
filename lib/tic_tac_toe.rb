@@ -38,7 +38,7 @@ class TicTacToe
   end 
   
   def valid_move?(idx)
-    if @board[idx] != nil 
+    if !position_taken?(idx) && idx.between?(0,8)
       true 
     else 
       false 
